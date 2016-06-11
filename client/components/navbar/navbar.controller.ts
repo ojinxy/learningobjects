@@ -7,8 +7,8 @@ class NavbarController {
     'state': 'main'
   },
   {
-    'title': 'Create Learning Objects',
-    'state': ''
+    'title': 'Learning Object',
+    'state': 'learningobject'
   }];
 
   isCollapsed = true;

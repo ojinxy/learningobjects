@@ -10,7 +10,8 @@ angular.module('learningobjectsApp', [
   'btford.socket-io',
   'ui.router',
   'ui.bootstrap',
-  'validation.match'
+  'validation.match',
+  'mgo-angular-wizard'
 ])
   .config(function($urlRouterProvider, $locationProvider) {
     $urlRouterProvider

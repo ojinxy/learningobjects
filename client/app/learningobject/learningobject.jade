@@ -1,0 +1,13 @@
+wizard(on-finish='finishedWizard()')
+  wz-step(wz-title='Starting')
+    h1 What is your learning objective?
+    p Here you can use whatever you want.
+    input(type='submit',wz-next, value='Continue')
+  wz-step(wz-title='Continuing')
+    h1 Define your learning object.
+    p You have continued here!
+    input(type='submit', wz-next, value='Go on')
+  wz-step(wz-title='More Steps')
+    h1 Upload content.
+    p Even more steps!!!
+    input(type='submit', wz-next, value='Finish')

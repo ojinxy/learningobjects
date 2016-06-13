@@ -1,13 +1,15 @@
 wizard(on-finish='finishedWizard()')
   wz-step(wz-title='Starting')
-    h1 What is your learning objective?
-    p Here you can use whatever you want.
+    h3 What is your learning objective?
+    div(ng-repeat='lObj in $ctrl.learningObjectives')
+      learning-objective-selection(learning-objective='lObj',ng-click='$ctrl.selectObjective(lObj)',
+      selected-objective='$ctrl.selectedObjective')
     input(type='submit',wz-next, value='Continue')
   wz-step(wz-title='Continuing')
-    h1 Define your learning object.
+    h3 Define your learning object.
     p You have continued here!
     input(type='submit', wz-next, value='Go on')
   wz-step(wz-title='More Steps')
-    h1 Upload content.
+    h3 Upload content.
     p Even more steps!!!
     input(type='submit', wz-next, value='Finish')

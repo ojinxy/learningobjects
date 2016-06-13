@@ -1,0 +1,35 @@
+@import "../../../../bower_components/animatewithsass/animate.scss";
+
+.selection-tile{
+  text-align: center;
+  padding: 2px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.not-selected{
+  @extend .selection-tile;
+  background-color: lavender;
+
+}
+
+.not-selected:hover{
+    @extend .selection-tile;
+    background-color: lightskyblue;
+}
+
+.selected{
+  @include bounceIn();
+    @extend .selection-tile;
+    background-color: blue;
+    color: white;
+}
+
+.title{
+    font-family: cursive;
+    font-size: large;
+}
+
+.info{
+  font-style: italic;
+}

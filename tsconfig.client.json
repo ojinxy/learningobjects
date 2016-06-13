@@ -18,6 +18,7 @@
         "client/app/admin/admin.module.ts",
         "client/app/admin/admin.router.ts",
         "client/app/app.ts",
+        "client/app/learningobject/directives/learningObjectiveSelection/learningObjectiveSelection.directive.ts",
         "client/app/learningobject/learningobject.controller.ts",
         "client/app/learningobject/learningobject.ts",
         "client/app/main/main.controller.ts",

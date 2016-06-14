@@ -11,7 +11,8 @@ angular.module('learningobjectsApp', [
   'ui.router',
   'ui.bootstrap',
   'validation.match',
-  'mgo-angular-wizard'
+  'mgo-angular-wizard',
+  'angular-loading-bar'
 ])
   .config(function($urlRouterProvider, $locationProvider) {
     $urlRouterProvider

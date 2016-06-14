@@ -6,5 +6,9 @@ angular.module('learningobjectsApp')
       .state('learningobject', {
         url: '/learningobject',
         template: '<learningobject></learningobject>'
+      })
+      .state('learningobject.new', {
+        url: '/new',
+        template: '<learningobject></learningobject>'
       });
   });

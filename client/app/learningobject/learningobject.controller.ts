@@ -2,16 +2,24 @@
 (function(){
 
 class LearningobjectComponent {
-  constructor($http, $scope) {
-    this.learningObjectives = [];
+  constructor($http, $scope, learningObjectiveService) {
+    $scope.learningObjectives = {};
     this.selectedObjective = null;
     this.$http = $http;
+    this.learningObjectiveService = learningObjectiveService;
   }
 
+
+
   $onInit() {
-    this.$http.get('/api/learningobjectives').then(response => {
+    /*this.$http.get('/api/learningobjectives').then(response => {
+      this.learningObjectives = response.data;
+    });*/
+
+    this.learningObjectiveService.getAll().then(response => {
       this.learningObjectives = response.data;
     });
+
   }
 
   selectObjective(learningObjective) {

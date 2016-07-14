@@ -5,10 +5,12 @@ angular.module('learningobjectsApp')
     $stateProvider
       .state('learningobject', {
         url: '/learningobject',
-        template: '<learningobject></learningobject>'
+        template: '<learningobject></learningobject>',
+        authenticate: 'user'
       })
       .state('learningobject.new', {
         url: '/new',
-        template: '<learningobject></learningobject>'
+        template: '<learningobject></learningobject>',
+        authenticate: 'user'
       });
   });

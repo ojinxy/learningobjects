@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('learningobjectsApp', [
+angular.module('learningobjectsApp', [
   'learningobjectsApp.auth',
   'learningobjectsApp.admin',
   'learningobjectsApp.constants',
@@ -21,13 +21,3 @@ var app = angular.module('learningobjectsApp', [
 
     $locationProvider.html5Mode(true);
   });
-
-app.factory('learningObjectiveService', function($http){
-  var factory = {};
-
-  factory.getAll = function(){
-    return $http.get('/api/learningobjectives');
-  };
-
-  return factory;
-});
